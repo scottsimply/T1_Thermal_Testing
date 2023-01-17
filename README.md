@@ -15,7 +15,7 @@ I run my FormD T1 v2 sandwich case in 2 slot mode, PSU in alternative 90° mount,
 * 2 pin thermal probe taped to radiator tank and attached to the motherboard for liquid temp readings  
   
 # Test parameters
-### [Side panel:](https://imgur.com/LURjMbH)  
+###[Side panel:](https://imgur.com/LURjMbH)  
 * [Aluminium](https://imgur.com/K7qZbpJ)  
 * [Acrylic mesh](https://imgur.com/vwnjcuq)  
 * [Tempered glass \(TG\)](https://imgur.com/2Uk37Uu)  
@@ -39,7 +39,7 @@ The T30 was always run at 60%, ~1750 rpm
 For each configuration I ran:  
 
 * Cinebench R23 for 10 minutes, just to get some heat in the loop.
-* The same Cyperpunk 2077 save file, with a mix of high and ultra settings, and ray tracing enabled, for 15 minutes. I focus on these results for the conclusions.  
+* The same Cyberpunk 2077 save file, with a mix of high and ultra settings, and ray tracing enabled, for 15 minutes. I focus on these results for the conclusions.  
 * OCCT Power test, which loads 100% of the power limit for both CPU and GPU, for 15 minutes. Keep in mind this is an unrealistic test, practically no real workload will ever run under these conditions, this is a worst case scenario.  
 
 # Results:  
@@ -48,7 +48,7 @@ For each configuration I ran:
 We see relatively little scaling here in terms of CPU temperature, but a ~5°C difference in liquid temperatures from best to worst.  
 #### [Cyberpunk 2077:](https://imgur.com/GgcEdjD)   
 CPU & GPU temperatures stay under control regardless of the configuration, we see a ~10°C difference in liquid temperatures from best to worst. I focus on these results.  
-#### [OCCT:](https://imgur.com/JvQf0m4)   
+#### [OCCT:](https://imgur.com/8AgowJN)   
 Same story as Cyberpunk, CPU and GPU temperatures are reasonable, and a ~11°C difference in liquid temperatures.  
 
 # Conclusions:  
@@ -67,11 +67,11 @@ With the hollow and acrylic mesh top panels, the gap is smaller, CPU increases o
 
 ### Fan combinations:  
 * I want to point to previous testing of mine, that shows how the combination of A12x15 + T30 outperforms a setup with 2 A12x15 + A T30, and how 2 slim fans is significantly worse, you can find this [here](https://www.reddit.com/r/FormD/comments/w7t7r4/aio_fan_testing_for_t1_v2_sandwich_layout/).
-* Keeping the slim fan (A12x15) the same and substituing the T30 for the A12x25 and the stock panel we see marginally increased CPU temperatures, a slight improvent in GPU temperatures, but worsened liquid temperatures. The difference is not large, but the T30 does outperform the A12x25. However with the hollow top panel, the gap between the the A12x25 and T30 widens, we now see almost 2°C better liquid temperatures.  
-* The hollow top panel allows for "hotrodding" [\(picture\)](https://imgur.com/jMT5BWs), where the radiator/fan area is expanded as it is no longer contained by the top panel. This allows you to use a non-slim fan on the motherboard side of the case. This leads to the A12x25 + T30 config. This improves temperature substantially, but keep in mind that not only is the A12x25 is a better fan than the A12x15, but it is spinning 300 RPM faster to match the T30 fan speed. Switching from the slim fan to the A12x25 drops CPU temperatures by 2°C, liquid temperatures by over 3°C, and GPU temperatures decrease by 0.5°C.  
+* Keeping the slim fan (A12x15) the same and substituting the T30 for the A12x25 and the stock panel we see marginally increased CPU temperatures, a slight improvent in GPU temperatures, but worsened liquid temperatures. The difference is not large, but the T30 does outperform the A12x25. However with the hollow top panel, the gap between the the A12x25 and T30 widens, we now see almost 2°C better liquid temperatures.  
+* The hollow top panel allows for "hotrodding" [\(picture\)](https://imgur.com/J2CDvam), where the radiator/fan area is expanded as it is no longer contained by the top panel. This allows you to use a non-slim fan on the motherboard side of the case. This leads to the A12x25 + T30 config. This improves temperature substantially, but keep in mind that not only is the A12x25 is a better fan than the A12x15, but it is spinning 300 RPM faster to match the T30 fan speed. Switching from the slim fan to the A12x25 drops CPU temperatures by 2°C, liquid temperatures by over 3°C, and GPU temperatures decrease by 0.5°C.  
 
 ### Stand:
-* Stand testing [\(results\)](https://imgur.com/a/9iaZL0d) was not part of the testing procedures above, as I have tested it previously. The timespy graphics test was looped for 30 minutes, temperatures were within margin of error between the standard and vertical mount.  
+* Stand testing [\(results\)](https://imgur.com/a/9iaZL0d) was not part of the testing procedures above, as I have tested it previously. The timespy graphics test was looped for 30 minutes, temperatures were within margin of between the standard and vertical mount.  
   
 # Other information:  
 * [Here](https://imgur.com/a/8NPrbwA) you can see pictures of the various setups, side panels, top panels, other bits.  
@@ -81,7 +81,12 @@ With the hollow and acrylic mesh top panels, the gap is smaller, CPU increases o
 # TL;DR:  
 * TG side panel increases CPU and liquid temperatures by 2-3°C, but decreases GPU temperatures by the same.  
 * Acrylic mesh and aluminium side panel perform identically.  
-* The acrylic mesh top panel is marginaly better than the stock top panel, the hollow top panel performs best.  
+* The acrylic mesh top panel is marginally better than the stock top panel, the hollow top panel performs best.  
+* T30 + A12x15 is the best AIO fan setup (excluding SW Pro 4).  
+* Hotrodding with the hollow top panel gives a lot more thermal headroom.
+* The stand does not affect temperatures.
+* Acrylic mesh and aluminium side panel perform identically.  
+* The acrylic mesh top panel is marginally better than the stock top panel, the hollow top panel performs best.  
 * T30 + A12x15 is the best AIO fan setup (excluding SW Pro 4).  
 * Hotrodding with the hollow top panel gives a lot more thermal headroom.
 * The stand does not affect temperatures.
