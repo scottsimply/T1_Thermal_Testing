@@ -145,9 +145,9 @@ def barChartPlot_3(cpu, gpu, liq, key, title):
     plt.ylabel("Temperature (°C)")
     plt.title("Equilibrium temperatures after 15 minutes of " + title)
 
-    ax.bar_label(bar1, [round(item) for item in liq])
-    ax.bar_label(bar2, [round(item) for item in cpu])
-    ax.bar_label(bar3, [round(item) for item in gpu])
+    ax.bar_label(bar1, [round(item, 1) for item in liq])
+    ax.bar_label(bar2, [round(item, 1) for item in cpu])
+    ax.bar_label(bar3, [round(item, 1) for item in gpu])
 
     # Add a legend
     plt.legend((bar1, bar2, bar3), ('AIO Liquid', 'CPU', 'GPU'), loc='lower right')
@@ -185,8 +185,8 @@ def barChartPlot_2(liq, cpu, key, title):
     plt.ylabel("Temperature (°C)")
     plt.title("Equilibrium temperatures after 10 minutes of " + title)
 
-    ax.bar_label(bar1, [round(item) for item in liq])
-    ax.bar_label(bar2, [round(item) for item in cpu])
+    ax.bar_label(bar1, [round(item, 1) for item in liq])
+    ax.bar_label(bar2, [round(item, 1) for item in cpu])
 
     # Add a legend
     plt.legend((bar1, bar2), ('AIO Liquid', 'CPU'), loc='lower right')
