@@ -15,7 +15,7 @@ I run my FormD T1 v2 sandwich case in 2 slot mode, PSU in alternative 90° mount,
 * 2 pin thermal probe taped to radiator tank and attached to the motherboard for liquid temp readings  
   
 # Test parameters
-###[Side panel:](https://imgur.com/LURjMbH)  
+### [Side panel:](https://imgur.com/LURjMbH)  
 * [Aluminium](https://imgur.com/K7qZbpJ)  
 * [Acrylic mesh](https://imgur.com/vwnjcuq)  
 * [Tempered glass \(TG\)](https://imgur.com/2Uk37Uu)  
@@ -44,7 +44,7 @@ For each configuration I ran:
 
 # Results:  
 [Full album here](https://imgur.com/a/UVCr7pc)  
-####[Cinebench R23:](https://imgur.com/6eN5OMP)   
+#### [Cinebench R23:](https://imgur.com/6eN5OMP)   
 We see relatively little scaling here in terms of CPU temperature, but a ~5°C difference in liquid temperatures from best to worst.  
 #### [Cyberpunk 2077:](https://imgur.com/GgcEdjD)   
 CPU & GPU temperatures stay under control regardless of the configuration, we see a ~10°C difference in liquid temperatures from best to worst. I focus on these results.  
