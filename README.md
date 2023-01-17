@@ -85,8 +85,3 @@ With the hollow and acrylic mesh top panels, the gap is smaller, CPU increases o
 * T30 + A12x15 is the best AIO fan setup (excluding SW Pro 4).  
 * Hotrodding with the hollow top panel gives a lot more thermal headroom.
 * The stand does not affect temperatures.
-* Acrylic mesh and aluminium side panel perform identically.  
-* The acrylic mesh top panel is marginally better than the stock top panel, the hollow top panel performs best.  
-* T30 + A12x15 is the best AIO fan setup (excluding SW Pro 4).  
-* Hotrodding with the hollow top panel gives a lot more thermal headroom.
-* The stand does not affect temperatures.
