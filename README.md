@@ -20,5 +20,4 @@ The tests ran in a FormD T1 v2 sandwich using:
        *Fan combinations:*  
        A12x15 + T30  
        A12x15 + A12x25  
-       A12x25 + A12x25  
        A12x25 + T30  
