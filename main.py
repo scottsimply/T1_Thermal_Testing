@@ -56,12 +56,12 @@ def importHwInfo(fileName, ambient):
                                engine='python')
 
         # Only selects interesting columns and adjusts for changes in ambient temperature throughout testing
-        lastRead = lastRead.loc[:, ["T_Sensor [°C]", "CPU [°C]", "GPU Temperature [°C]", "CPU Package Power [W]",
+        lastRead = lastRead.loc[:, ["T_Sensor [°C]", "CPU (Tctl/Tdie) [°C]", "GPU Temperature [°C]", "CPU Package Power [W]",
                                     "CPU [RPM]", "Chassis1 [RPM]", "GPU Fan1 [RPM]", "GPU Power [W]", "Date", "Time"]]
-        lastRead.loc[:, ["T_Sensor [°C]", "CPU [°C]", "GPU Temperature [°C]"]] = \
-            lastRead.loc[:, ["T_Sensor [°C]", "CPU [°C]", "GPU Temperature [°C]"]].sub(ambient[i])
-        lastRead.loc[:, ["T_Sensor [°C]", "CPU [°C]", "GPU Temperature [°C]"]] = \
-            lastRead.loc[:, ["T_Sensor [°C]", "CPU [°C]", "GPU Temperature [°C]"]].add(ambientBase)
+        lastRead.loc[:, ["T_Sensor [°C]", "CPU (Tctl/Tdie) [°C]", "GPU Temperature [°C]"]] = \
+            lastRead.loc[:, ["T_Sensor [°C]", "CPU (Tctl/Tdie) [°C]", "GPU Temperature [°C]"]].sub(ambient[i])
+        lastRead.loc[:, ["T_Sensor [°C]", "CPU (Tctl/Tdie) [°C]", "GPU Temperature [°C]"]] = \
+            lastRead.loc[:, ["T_Sensor [°C]", "CPU (Tctl/Tdie) [°C]", "GPU Temperature [°C]"]].add(ambientBase)
 
         # I want a relative time in seconds, I get the first timestamp, so I can subtract it from all other timestamps.
         time0 = pd.to_datetime(lastRead.Date[0] + " " + lastRead.Time[0], format='%d.%m.%Y %H:%M:%S.%f')
@@ -86,7 +86,7 @@ def monsterPlot(data, title, key):
     fig.suptitle(title, fontsize=24)
 
     # More plot formatting
-    plotThings = ["T_Sensor [°C]", "CPU [°C]", "GPU Temperature [°C]", "CPU Package Power [W]", "CPU [RPM]",
+    plotThings = ["T_Sensor [°C]", "CPU (Tctl/Tdie) [°C]", "GPU Temperature [°C]", "CPU Package Power [W]", "CPU [RPM]",
                   "Chassis1 [RPM]", "GPU Fan1 [RPM]", "GPU Power [W]"]
     ylabels = ["Temperature (°C)", "Temperature (°C)", "Temperature (°C)", "CPU Package Power (W)",
                "A12x15/A12x25 fan speed (rpm)", "T30/A12x25 fan speed (rpm)", "GPU Fan speed (rpm)", "GPU Power (W)"]
@@ -224,15 +224,15 @@ if __name__ == '__main__':
     # Calculating means from the data
 
     # Between 300s and 600s the thermals are stable for the CB run
-    cbCPU = fancyMean(300, 600, "CPU [°C]", cb)
+    cbCPU = fancyMean(300, 600, "CPU (Tctl/Tdie) [°C]", cb)
     cbLiq = fancyMean(300, 600, "T_Sensor [°C]", cb)
 
     # Temperatures are stable between 700 and 850s for Cyberpunk 2077 and OCCT
-    cp77CPU = fancyMean(700, 850, "CPU [°C]", cp77)
+    cp77CPU = fancyMean(700, 850, "CPU (Tctl/Tdie) [°C]", cp77)
     cp77GPU = fancyMean(700, 850, "GPU Temperature [°C]", cp77)
     cp77Liq = fancyMean(700, 850, "T_Sensor [°C]", cp77)
 
-    occtCPU = fancyMean(700, 850, "CPU [°C]", occt)
+    occtCPU = fancyMean(700, 850, "CPU (Tctl/Tdie) [°C]", occt)
     occtGPU = fancyMean(700, 850, "GPU Temperature [°C]", occt)
     occtLiq = fancyMean(700, 850, "T_Sensor [°C]", occt)
 
