@@ -1,0 +1,12 @@
+#,Fan,Side panel,Top panel
+1,a12x15 + t30,tempered glass,stock
+2,a12x15 + t30,aluminium,stock
+3,a12x15 + t30,acrylic mesh,stock
+4,a12x15 + t30,aluminium,acrylic mesh
+5,a12x15 + t30,tempered glass,acrylic mesh
+6,a12x15 + a12x25,aluminium,stock
+7,a12x15 + a12x25,aluminium,hollow
+8,a12x15 + t30,aluminium,hollow
+9,a12x15 + t30,tempered glass,hollow
+10,a12x25 + T30,tempered glass,hollow
+11,a12x25 + T30,aluminium,hollow
